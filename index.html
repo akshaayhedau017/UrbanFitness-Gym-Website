@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon-32x3211.png" type="image/x-icon">
+
+        <!--=============== REMIXICON ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+        
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Urban Fitness</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        
+
+
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/Screenshot_2024-07-20_123302_1_optimized.png" alt="logo">Urban Fitness
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#program" class="nav__link">Programs</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#choose" class="nav__link">Choose Us</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#pricing" class="nav__link">Pricing</a>
+                        </li>
+
+                        <div class="nav__link">
+                            <a href="#footer" class="button nav__button">
+                                Register Now
+                            </a>
+                        </div>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-fill"></i>
+                    </div>
+                </div>
+
+
+                <!-- Toggle Button -->
+                 <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-search-fill"></i>
+                 </div>
+            </nav>
+            
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            
+            
+           
+
+
+
+
+
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h2 class="home__subtitle">MAKE YOUR</h2>
+                        <h1 class="home__title">BODY SHAPE</h1>
+                        <p class="home__description">
+                            Here,we will help you shape your body and live it to its fullest.
+                        </p>
+                        <a href="#program" class="button button__flex">
+                            Get started<i class="ri-arrow-right-double-line"></i>
+                        </a>
+                    </div>
+                    <div class="home__images">
+                        <img src="assets/img/home-img.png" alt="home image" class="home__img">
+                        <div class="home__triangle home__triangle-3"></div>
+                        <div class="home__triangle home__triangle-2"></div>
+                        <div class="home__triangle home__triangle-1"></div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--==================== WhatsApp ChatBot ====================-->
+            <div class="WA_Chat_Widget" data-position="bottom-right">
+                <div class="WA_ChatBox">
+                    <div class="WA_ChatBox_Header">
+                        <div class="avatarBox">
+                            <img src="assets/img/Screenshot 2024-07-20 123302.png" alt="Chat Avatar">
+                        </div>
+                        <div class="infoBox">
+                            <h4 class="name">Urban Fitness</h4>
+                            <span class="answer_time">Typically replies within a day</span>
+                        </div>
+                        <button class="WA_Close" onclick="hideChatbox()"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                            </svg></button>
+                    </div>
+                    <div class="WA_ChatBox_Body">
+                        <div class="message">
+                            <h4 class="username">Urban Fitness</h4>
+                            <div class="message_content">
+                                <p>Hey There, How can I help you?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="WA_ChatBox_Footer">
+                        <a class="btn btn-whatsapp" href="http://wa.me/9981158552" target="_blank">Start Chat</a>
+                    </div>
+                </div>
+                <div class="WA_FloatingButton" onclick="toggleChatbox()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#4FCE5D" viewBox="0 0 90 90">
+                        <path
+                            d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 01-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 01-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0045.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <script>
+                let isChatboxVisible = false;
+                const chatbox = document.querySelector(".WA_Chat_Widget .WA_ChatBox");
+                function hideChatbox() {
+                    isChatboxVisible = false;
+                    chatbox.style.display = "none";
+                }
+                function toggleChatbox() {
+                    isChatboxVisible = !isChatboxVisible;
+                    chatbox.style.display = isChatboxVisible ? "block" : "none";
+                }
+            </script>
+
+
+             <!--==================== OfferPopUp ====================-->
+             <!-- <div class="popup">
+                <div class="contentBox">
+                    <div class="close">
+                        <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">X</a> -->
+                    <!-- </div>
+                    <div class="imgBx">
+                        <img src="assets/img/offer.jpg" alt="Offer">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="#footer">Get The Deal</a>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                
+            </script>
+
+            Automatic show popup after 2 sec of reload -->
+             <!-- <script>
+                const popup = document.querySelector('.popup');
+                const close = document.querySelector('.close');
+
+                window.onload = function(){
+                    setTimeout(function(){
+                        popup.style.display = "block";
+
+                        //Add some delay to  show popup
+                    }, 2000)
+                }
+
+                close.addEventListener('click', () => {
+                    popup.style.display = "none";
+
+                })
+             </script> --> 
+
+             
+             <div id="offer-popup" class="offer-popup">
+                <span class="close-btn" onclick="closePopup()">×</span>
+                <h2>Special Offer!</h2>
+                <p>Buy 1 Get 1 + Special Discounts.</p>
+                <button onclick="claimOffer()">Get the Deal</button>
+            </div>
+            <div id="confirmation-message" class="confirmation-message">
+                Offer claimed successfully!
+            </div>
+            <script src="script.js"></script>
+
+
+            
+           
+<!-- <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+<div class="commonninja_component pid-807eaea2-efa2-4961-930b-be34e9cf775a"></div> -->
+
+
+
+
+
+
+            <!-- Slideshow container -->
+<!-- <div class="slideshow-container"> -->
+
+    <!-- Full-width slides/quotes --!
+    <div class="mySlides">
+      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+      <p class="author">- John Keats</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+      <p class="author">- Ernest Hemingway</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+      <p class="author">- Thomas A. Edison</p>
+    </div>
+  
+    <!-- Next/prev buttons
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  Dots/bullets/indicators 
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>  -->
+
+  
+
+            <!--==================== PROGRAM ====================-->
+            <section class="program section" id="program">
+                <div class="container">
+                    <div class="section__data">
+                        <h2 class="section__subtitle">Our Programs</h2>
+                        <div class="section__titles">
+                            <h1 class="section__title-border">BUILD YOUR</h1>
+                            <h1 class="section__title">BEST BODY</h1>
+                        </div>
+                    </div>
+                    <div class="program__container grid">
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program1.png" alt="program image" class="program__image">
+                            </div>
+                            <h3 class="program__title">Flex Muscle</h3>
+                            <p class="program__description">
+                                Creating tension that's temporarily making the muscle fibers smaller or contracted.
+                            </p>
+                            <a href="#" class="program__button">
+                                <i class="ri-expand-right-fill"></i>
+                            </a>
+                        </article>
+
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program2.png" alt="program image" class="program__image">
+                            </div>
+                            <h3 class="program__title">Cardio Exercise</h3>
+                            <p class="program__description">
+                                Exercise your heart rate up and keeps it up for a prolonged period of time.
+
+                            </p>
+                            <a href="#" class="program__button">
+                                <i class="ri-expand-right-fill"></i>
+                            </a>
+                        </article>
+
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program4.png" alt="program image" class="program__image">
+                            </div>
+                            <h3 class="program__title">Weight Training</h3>
+                            <p class="program__description">
+                                Attempts a maximum weight single lift of a barbell loaded with weight plates.
+
+                            </p>
+                            <a href="#" class="program__button">
+                                <i class="ri-expand-right-fill"></i>
+                            </a>
+                        </article>
+
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program5.png" alt="program image" class="program__image">
+                            </div>
+                            <h3 class="program__title">Zumba Fun</h3>
+                            <p class="program__description">
+                                Make life full of fun with rhythmic ZUMBA
+                            </p>
+                            <a href="#" class="program__button">
+                                <i class="ri-expand-right-fill"></i>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+                
+            </section>
+
+            
+
+             <!--==================== GALLERY ====================-->
+             <div class="section__data">
+                <h2 class="section__subtitle">Our gallery</h2>
+                <div class="section__titles">
+                    <h1 class="section__title-border">BUILD YOUR</h1>
+                    <h1 class="section__title">BEST BODY</h1>
+                </div>
+             <div class="gallery-wrap">
+                <img src="assets/img/back.png" id="backBtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="assets/img/img1.jpg" alt=""></span>
+                        <span><img src="assets/img/img2.jpg" alt=""></span>
+                        <span><img src="assets/img/img3.jpg" alt=""></span>
+                        <span><img src="assets/img/img4.jpg" alt=""></span>
+                        <span><img src="assets/img/img5.jpg" alt=""></span>
+                        <span><img src="assets/img/img8.jpg" alt=""></span>
+                        
+                    </div>
+                    <div>
+                        
+                        <span><img src="assets/img/img6.jpg" alt=""></span>
+                        <span><img src="assets/img/img7.jpg" alt=""></span>
+                        
+    
+                    </div>
+                </div>
+                <img src="assets/img/next.png" id="nextBtn">
+            </div>
+            <script>
+                let scrollContainer=document.querySelector(".gallery");
+                let backBtn = document.getElementById("backBtn");
+                let nextBtn = document.getElementById("nextBtn");
+
+                scrollContainer.addEventListener("wheel",(evt) =>{
+                    evt.preventDefault();
+                    scrollContainer.scrollLeft += evt.deltaY;
+                    scrollContainer.style.scrollBehavior = "auto";
+
+                });
+
+                nextBtn.addEventListener("click", () =>{
+                    scrollContainer.style.scrollBehavior = "smooth";
+                    scrollContainer.scrollLeft +=900;
+                });
+                backBtn.addEventListener("click", () =>{
+                    scrollContainer.style.scrollBehavior = "smooth";
+                    scrollContainer.scrollLeft -=900;
+                });
+            </script>
+
+             </div>
+             
+
+            
+
+
+
+            <!--==================== CHOOSE US ====================-->
+            <section class="choose section" id="choose">
+
+                <div class="choose__overflow">
+                    <div class="choose__container container grid">
+                        <div class="choose__content">
+                            <div class="section__data">
+                                <h2 class="section__subtitle">Best reason</h2>
+                                    <div class="section__titles">
+                                        <h1 class="section__title-border">WHY</h1>
+                                        <h1 class="section__title">JOIN US?</h1>
+                                    </div>
+                                
+                            </div>
+
+                            <p class="choose__description">
+                                Choose your favorite class and start now. Remember the 
+only bad workout is the one you didn't do.
+                            </p>
+
+                            <div class="choose__data">
+                                <div class="choose__group">
+                                    <h3 class="choose__number">100+</h3>
+                                    <p class="choose__subtitle">Total Members</p>
+                                </div>
+
+                                <div class="choose__group">
+                                    <h3 class="choose__number">3</h3>
+                                    <p class="choose__subtitle">Best Trainers</p>
+                                </div>
+
+                                <div class="choose__group">
+                                    <h3 class="choose__number">3+</h3>
+                                    <p class="choose__subtitle">programs</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="choose__images">
+                            <img src="assets/img/choose-img.png" alt="choose image" class="choose__img">
+
+                            <div class="choose__triangle choose__triangle-1"></div>
+                            <div class="choose__triangle choose__triangle-2"></div>
+                            <div class="choose__triangle choose__triangle-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="section__data">
+                    <h2 class="section__subtitle">Best Reason</h2>
+                    <div class="section__titles">
+                    <h1 class="section__title-border">WHY</h1>
+                    <h1 class="section__title">JOIN US?</h1>
+
+                </div>
+                </div>
+                <p class="choose__description">
+                    Our diverse membership base createsa friendly and supportive atmosphere, where you can make friends and stay motivated.
+                </p>
+                <div class="join__image">
+                    <img src="assets/img/choose-img.png" alt="Join">
+                    <div class="join__grid">
+                        <div class="join__card">
+                            <span><i class="ri-user-star-fill"></i></span>
+                            <div class="join__card_content">
+                                <h4>Personal Trainer</h4>
+                                <p>Unlock your potential with our expert personal trainer</p>
+                            </div>
+                        </div>
+
+                        <div class="join__card">
+                            <span><i class="ri-vidicon-fill"></i></span>
+                            <div class="join__card_content">
+                                <h4>Practice Sessions</h4>
+                                <p>Elevate your fitness with practice sessions</p>
+                            </div>
+                        </div>
+
+                        <div class="join__card">
+                            <span><i class="ri-building-line"></i></span>
+                            <div class="join__card_content">
+                                <h4>Good Management</h4>
+                                <p>Suportive management, for your fitness success</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                
+            </section>
+
+            <!--==================== PRICING ====================-->
+            <section class="pricing section" id="pricing">
+                <div class="container">
+                    <div class="section__data">
+                        <h2 class="section__subtitle">Pricing</h2>
+                            <div class="section__titles">
+                                <h1 class="section__title-border">OUR</h1>
+                                <h1 class="section__title">PLANS</h1>
+                            </div>
+                    </div>
+                    <div class="pricing__container grid">
+                        <article class="pricing__card pricing__card-active">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="assets/img/pricing1.png" alt="pricing image" class="pricing__image">
+                                </div>
+                                <h1 class="pricing__title">BASIC PACKAGE</h1>
+                                <h2 class="pricing__number">$120</h2>
+                                
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item "><i class="ri-checkbox-circle-line"></i>5 Days In A Week
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                            </ul>
+                            <li class="pricing__item pricing__item-opacity"><i class="ri-checkbox-circle-line"></i>01 Sweatshirt
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item pricing__item-opacity"><i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item pricing__item-opacity"><i class="ri-checkbox-circle-line"></i>Access to Videos
+                                </li>
+                            </ul>
+
+                            <a href="" class="button button__flex pricing__button">
+                                CONTACT NOW<i class="ri-arrow-right-line"></i>
+                            </a>
+                        </article>
+
+
+                        <article class="pricing__card pricing__card-active">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="assets/img/pricing2.png" alt="pricing image" class="pricing__image">
+                                </div>
+                                <h1 class="pricing__title">PREMIUM PACKAGE</h1>
+                                <h2 class="pricing__number">$200</h2>
+                                
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item"><i class="ri-checkbox-circle-line"></i>5 Days In A Week
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item"><i class="ri-checkbox-circle-line"></i>01 Sweatshirt
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item pricing__item-opacity"><i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item pricing__item-opacity"><i class="ri-checkbox-circle-line"></i>Access to Videos
+                                </li>
+                            </ul>
+
+                            <a href="" class="button button__flex pricing__button">
+                                CONTACT NOW<i class="ri-arrow-right-line"></i>
+                            </a>
+                        </article>
+
+
+                        <article class="pricing__card pricing__card-active">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="assets/img/pricing3.png" alt="pricing image" class="pricing__image">
+                                </div>
+                                <h1 class="pricing__title">DIAMOND PACKAGE</h1>
+                                <h2 class="pricing__number">$420</h2>
+                                
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item"><i class="ri-checkbox-circle-line"></i>5 Days In A Week
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item"><i class="ri-checkbox-circle-line"></i>01 Sweatshirt
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item"><i class="ri-checkbox-circle-line"></i>01 Bottle of Protein
+                                </li>
+                            </ul>
+
+                            <ul class="pricing__list">
+                                <li class="pricing__item"><i class="ri-checkbox-circle-line"></i>Access to Videos
+                                </li>
+                            </ul>
+
+                            <a href="" class="button button__flex pricing__button">
+                                CONTACT NOW<i class="ri-arrow-right-line"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--==================== CALCULATE ====================-->
+            <section class="calculate section">
+                
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section" id="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#home" class="footer__logo">
+                        <img src="assets/img/cropped_image.png" alt="">URBAN FITNESS
+                    </a>
+                    <p class="footer__description">
+                        Subsribe for company <br> Updates below.
+                    </p>
+                    <form action="" class="footer__form" id="contact-form">
+                        <input type="email" maxlength="4" name="user_email" placeholder="Your Email" class="footer__input" id="contact-user">
+                        <button type="submit" class="button">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="footer__message" id="contact-message"></p>
+                </div>
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            SERVICES
+                        </h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__link">Flex Muscle</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link">Cardio Exercise</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link">Weight Training</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link">Zumba Fun</a>
+                                </li>
+                            </ul>
+                        
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            PRICING
+                                          
+                        </h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__link">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link">Premium</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link">Diamond</a>
+                                </li>
+
+                                
+                            </ul>
+                        
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            COMPANY
+
+                        </h3>
+                            <ul class="footer__links">
+                                <li><p>Address: <a href="https://www.google.com/maps/place/23%C2%B015'21.2%22N+77%C2%B027'37.4%22E/@23.2560908,77.4576865,17.48z/data=!4m4!3m3!8m2!3d23.255886!4d77.460388?entry=ttu" class="footer__link">Indrapuri main road, opposite BHEL Gate No.1</a> </p>
+                                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3665.6425571486398!2d77.4576865!3d23.2560908!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE1JzIxLjIiTiA3N8KwMjcnMzcuNCJF!5e0!3m2!1sen!2sin!4v1721302733325!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link"></a>
+                                    <p>Phone No: +91-8293471247</p>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link"></a>
+                                    <p>Opening hours: Mon-Sat (6am-10pm) <br>  Sunday(6pm-10pm)</p>
+                                </li>
+
+                            </ul>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            <div class="container">
+                <div class="footer__group">
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/Theurbanfitnessclub?_rdr" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/urban_fitness_23/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        
+                    </ul>
+
+                    <span class="footer__copy">
+                        &#169; Copyright Urban Fitness. All rights reserved
+                    </span>
+                </div>
+            </div>
+            
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== EMAIL JS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>
